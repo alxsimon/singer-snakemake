@@ -1,0 +1,20 @@
+(specifications->manifest
+  '("bash"
+    "coreutils"
+    "gawk"
+    "htslib" ;; tabix & bgzip
+    "bcftools"
+    "bedtools"
+    "python-wrapper"
+    "python-stdpopsim"
+    "python-tskit"
+    "python-tszip"
+    "python-demes"
+    "python-msprime"
+    "python-scikit-allel"
+    "python-scipy"
+    "python-numpy"
+    "python-pyyaml"
+    "python-matplotlib"
+    "polegon"
+    "singer"))
