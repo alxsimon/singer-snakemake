@@ -70,7 +70,8 @@ def top_level_info(path: str, config: dict, version_strings: dict) -> None:
 
 # ------ config ------ #
 
-# configfile: "config/example_config.yaml"
+configfile: "config/jaera_config.yaml"
+container: "containers/environment.squashfs"
 
 VERSION = "0.1.1"  # FIXME: bump on tag
 
@@ -133,7 +134,8 @@ INFOS_PATH = os.path.join(OUTPUT_DIR, "info")
 CHROM_PATH = os.path.join(OUTPUT_DIR, "{chrom}")
 PLOTS_PATH = os.path.join(OUTPUT_DIR, "{chrom}", "plots")
 TREES_PATH = os.path.join(OUTPUT_DIR, "{chrom}", "trees")
-CHUNK_PATH = os.path.join(OUTPUT_DIR, "{chrom}", "chunks")
+# CHUNK_PATH = os.path.join(OUTPUT_DIR, "{chrom}", "chunks")
+CHUNK_PATH = os.path.join("scratch", "{chrom}", "chunks")
 STATS_PATH = os.path.join(OUTPUT_DIR, "{chrom}", "stats")
 
 
