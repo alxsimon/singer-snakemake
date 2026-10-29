@@ -17,4 +17,4 @@
     "python-pyyaml"
     "python-matplotlib"
     "polegon"
-    "singer"))
+    "singer-custom"))

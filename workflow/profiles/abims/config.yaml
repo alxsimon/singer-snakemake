@@ -1,0 +1,17 @@
+executor: slurm
+jobs: 100
+latency-wait: 20
+default-resources:
+  mem_mb: 8000
+  runtime: 1d
+  slurm_partition: fast
+  slurm_account: sexisol
+  tmpdir: /scratch2/sexisol/asimon
+software-deployment-method:
+  - apptainer
+apptainer-args: "--cleanenv -B /shared/projects/sexisol:/shared/projects/sexisol -B /tmp:/tmp -B /scratch2/sexisol:/scratch2/sexisol"
+rerun-triggers: 
+  - mtime
+  - code
+  - input
+  - params
